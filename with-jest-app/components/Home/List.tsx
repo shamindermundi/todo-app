@@ -12,6 +12,7 @@ interface Props {
 }
 
 const List = ({ taskList, setTaskList }: Props) => {
+    // Function to remove task
     const handleDelete = (index: number) => {
         taskList.splice(index, 1);
         setTaskList([...taskList]);
@@ -42,8 +43,6 @@ const List = ({ taskList, setTaskList }: Props) => {
             ) : (
                 <h5 className={styles.noTasks}>There are no tasks pending</h5>
             )}
-
-            {/* <li></li> */}
         </ul>
     );
 };
