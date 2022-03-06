@@ -14,7 +14,8 @@ const AddTask = ({ setTaskList }: Props) => {
     const [newTask, setNewTask] = useState("");
 
     // Function to add task in localstorage
-    const handleAdd = () => {
+    const handleAdd = (event: any) => {
+        event.preventDefault();
         if (newTask.trim() === "") return;
 
         let taskList: any = localStorage?.getItem("taskList");
@@ -32,17 +33,17 @@ const AddTask = ({ setTaskList }: Props) => {
     };
 
     return (
-        <div className={styles.addTask}>
+        <form className={styles.addTask} onSubmit={(e) => handleAdd(e)}>
             <input
                 placeholder="Add your task"
                 className={styles.input}
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
             />
-            <button onClick={() => handleAdd()} className={styles.addButton}>
+            <button type="submit" className={styles.addButton}>
                 Add
             </button>
-        </div>
+        </form>
     );
 };
 
