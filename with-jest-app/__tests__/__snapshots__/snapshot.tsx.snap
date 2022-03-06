@@ -13,6 +13,30 @@ exports[`renders homepage unchanged 1`] = `
       >
         List of Tasks
       </h1>
+      <form
+        class="addTask"
+      >
+        <input
+          class="input"
+          placeholder="Add your task"
+          value=""
+        />
+        <button
+          class="addButton"
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+      <ul
+        class="list"
+      >
+        <h5
+          class="noTasks"
+        >
+          There are no tasks pending
+        </h5>
+      </ul>
     </main>
     <footer
       class="footer"
