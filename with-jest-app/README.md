@@ -20,4 +20,7 @@ yarn create next-app --example with-jest with-jest-app
 
 ```bash
 npm test
+
+# or
+yarn test
 ```
