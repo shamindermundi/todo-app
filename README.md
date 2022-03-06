@@ -8,12 +8,15 @@ This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScri
 
 In your terminal, run the following command:
 
+```
 npx create-next-app --example with-jest with-jest-app
-#or
+ #or
 yarn create next-app --example with-jest with-jest-app
+```
 
 Run Jest Tests
-
+```
 npm test
 or
 yarn test
+```
