@@ -1,0 +1,40 @@
+.addTask {
+    margin: 1rem 0;
+}
+
+.input {
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    width: 300px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+.addButton {
+    padding: 8px 1rem;
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    width: 350px;
+}
+
+.singleTask {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+}
+
+.noTasks {
+    margin: 0.5rem 0;
+}
