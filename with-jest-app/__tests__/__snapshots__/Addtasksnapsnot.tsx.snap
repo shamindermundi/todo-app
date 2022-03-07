@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <form
+    class="addTask"
+  >
+    <input
+      class="input"
+      placeholder="Add your task"
+      value=""
+    />
+    <button
+      class="addButton"
+      type="submit"
+    >
+      Add
+    </button>
+  </form>
+</div>
+`;
