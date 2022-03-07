@@ -24,7 +24,7 @@ const List = ({ taskList, setTaskList }: Props) => {
             {taskList.length > 0 ? (
                 <>
                     {taskList.map((task: any, index: number) => (
-                        <li type="1" key={index} className={styles.singleTask}>
+                        <li key={index} className={styles.singleTask}>
                             {task}
                             <span style={{ cursor: "pointer" }} onClick={() => handleDelete(index)}>
                                 <svg
