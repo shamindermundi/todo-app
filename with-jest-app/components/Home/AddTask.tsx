@@ -35,12 +35,13 @@ const AddTask = ({ setTaskList }: Props) => {
     return (
         <form className={styles.addTask} onSubmit={(e) => handleAdd(e)}>
             <input
+                data-testid="input"
                 placeholder="Add your task"
                 className={styles.input}
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
             />
-            <button type="submit" className={styles.addButton}>
+            <button data-testid="add-button" type="submit" className={styles.addButton}>
                 Add
             </button>
         </form>

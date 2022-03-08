@@ -10,6 +10,7 @@ exports[`renders homepage unchanged 1`] = `
     >
       <h1
         class="title"
+        data-testid="heading"
       >
         List of Tasks
       </h1>
@@ -18,11 +19,13 @@ exports[`renders homepage unchanged 1`] = `
       >
         <input
           class="input"
+          data-testid="input"
           placeholder="Add your task"
           value=""
         />
         <button
           class="addButton"
+          data-testid="add-button"
           type="submit"
         >
           Add

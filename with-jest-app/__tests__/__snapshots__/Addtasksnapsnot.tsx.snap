@@ -7,11 +7,13 @@ exports[`renders add task unchanged 1`] = `
   >
     <input
       class="input"
+      data-testid="input"
       placeholder="Add your task"
       value=""
     />
     <button
       class="addButton"
+      data-testid="add-button"
       type="submit"
     >
       Add
