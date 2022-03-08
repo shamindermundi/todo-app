@@ -44,6 +44,7 @@ exports[`renders homepage unchanged 1`] = `
     </main>
     <footer
       class="footer"
+      data-testid="footer"
     >
       <a
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -33,12 +33,14 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>List of Tasks</h1>
+                <h1 data-testid="heading" className={styles.title}>
+                    List of Tasks
+                </h1>
                 <AddTask setTaskList={setTaskList} />
                 <List taskList={taskList} setTaskList={setTaskList} />
             </main>
 
-            <footer className={styles.footer}>
+            <footer className={styles.footer} data-testid="footer">
                 <a
                     href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                     target="_blank"

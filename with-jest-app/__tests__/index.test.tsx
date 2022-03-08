@@ -4,11 +4,12 @@ import Home from "@/pages/index";
 describe("Home", () => {
     it("renders a heading", () => {
         render(<Home />);
-
-        const heading = screen.getByRole("heading", {
-            name: "List of Tasks",
-        });
-
+        const heading = screen.getByTestId("heading");
         expect(heading).toBeInTheDocument();
+    });
+    it("renders a footer", () => {
+        render(<Home />);
+        const footer = screen.getByTestId("footer");
+        expect(footer).toBeInTheDocument();
     });
 });
