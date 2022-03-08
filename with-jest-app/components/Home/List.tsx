@@ -24,7 +24,7 @@ const List = ({ taskList, setTaskList }: Props) => {
             {taskList.length > 0 ? (
                 <>
                     {taskList.map((task: any, index: number) => (
-                        <li key={index} className={styles.singleTask}>
+                        <li key={index} className={styles.singleTask} data-testid="list-item">
                             {task}
                             <span style={{ cursor: "pointer" }} onClick={() => handleDelete(index)}>
                                 <svg
@@ -41,7 +41,9 @@ const List = ({ taskList, setTaskList }: Props) => {
                     ))}
                 </>
             ) : (
-                <h5 className={styles.noTasks}>There are no tasks pending</h5>
+                <h5 data-testid="no-tasks" className={styles.noTasks}>
+                    There are no tasks pending
+                </h5>
             )}
         </ul>
     );

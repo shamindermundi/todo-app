@@ -7,6 +7,7 @@ exports[`renders List of tasks unchanged 1`] = `
   >
     <li
       class="singleTask"
+      data-testid="list-item"
     >
       task1
       <span
@@ -27,6 +28,7 @@ exports[`renders List of tasks unchanged 1`] = `
     </li>
     <li
       class="singleTask"
+      data-testid="list-item"
     >
       task1
       <span

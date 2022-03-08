@@ -36,6 +36,7 @@ exports[`renders homepage unchanged 1`] = `
       >
         <h5
           class="noTasks"
+          data-testid="no-tasks"
         >
           There are no tasks pending
         </h5>
